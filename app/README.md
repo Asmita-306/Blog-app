@@ -1,16 +1,87 @@
-# React + Vite
+# 📝 Blog Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack Blog/Post Management Application built using **React, Express.js, Node.js, and MongoDB Atlas**.
 
-Currently, two official plugins are available:
+The application allows users to create, view, update, and delete blog posts through a REST API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Create a new blog post
+- View all blog posts
+- View an individual blog post
+- Update an existing blog post
+- Delete a blog post
+- Store blog posts in MongoDB Atlas
+- REST API using Express.js
+- React frontend using the native `fetch()` API
+- Responsive and user-friendly interface
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Technologies Used
+
+### Frontend
+- React
+- JavaScript
+- HTML
+- CSS
+- Fetch API
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB Node.js Driver
+- CORS
+
+### Database
+- MongoDB Atlas
+- MongoDB Compass for database inspection
+
+### Development Tools
+- VS Code
+- Git
+- GitHub
+- Vite
+
+---
+
+## 📁 Project Structure
+
+```text
+blog-app/
+│
+├── app/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── PostSummary.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Create.jsx
+│   │   │   ├── Post.jsx
+│   │   │   └── Archive.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   └── ...
+│
+├── server/
+│   ├── db/
+│   │   └── conn.mjs
+│   │
+│   ├── routes/
+│   │   └── posts.mjs
+│   │
+│   ├── .env
+│   ├── index.mjs
+│   ├── loadEnvironment.mjs
+│   ├── package.json
+│   └── test-mongo.mjs
+│
+├── .gitignore
+└── README.md
